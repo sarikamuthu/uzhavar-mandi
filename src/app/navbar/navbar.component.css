@@ -1,0 +1,52 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 1rem 2rem;
+    color: white;
+    position: relative; /* For centering the navbar links */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+  }
+  
+  /* Center Navbar Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    text-transform: uppercase;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .navbar-links a.active {
+    border-bottom: 2px solid #ffeb3b; /* Highlight active link */
+  }

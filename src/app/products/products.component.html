@@ -1,0 +1,26 @@
+<div class="about-header">
+    <div class="about-image">
+      <img src="assets/bg-our-products.jpg" alt="About Us Image">
+      <div class="about-text">
+        <h1>Our Products</h1>
+        <p>Expect only the freshest, most delicious produce - sourced straight from our partner farms and delivered within 12 hours at the wholesale prices you love. With over 200 items available at all times, we’re the only platform 
+            in India to satisfy customers with wide varieties of ingredients and a tireless service to back it, ensuring every meal is a gastronomic delight.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="products-container">
+    <h1>Our Fresh Vegetables</h1>
+    <div class="products-grid">
+      <div class="product-card" *ngFor="let product of products">
+        <div class="image-container">
+          <img [src]="product.image" alt="{{ product.name }}">
+        </div>
+        <div class="info-container">
+          <h2>{{ product.name }}</h2>
+          <p class="price">₹{{ product.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
